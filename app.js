@@ -7,7 +7,7 @@ app.configure(function () {
     app.use(express.static(__dirname + '/'));
 });
 
-var server = app.listen(80);
+var server = app.listen(81);
 
 var io = socket.listen(server);
 
