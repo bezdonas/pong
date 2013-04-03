@@ -1,0 +1,58 @@
+// Import Nib
+@import 'nib/index'
+
+// Resets
+global-reset()
+reset-html5()
+
+/***
+	Game block
+***/
+
+// Variables(edit this in scripts to):
+
+width = 400px
+height = 600px
+halfWidth = 200px
+halfHeight = 300px
+
+ballSize = 10px
+padWidth = 100px
+padHeight = 10px
+
+borderColor = #ccc
+ballColor = #000
+padColor = #000
+
+speed = 0.2s
+
+// Styles
+.pong-game
+	width width
+	height height
+	border 5px solid borderColor
+	position absolute
+	top 50%
+	left 50%
+	margin-top - halfHeight
+	margin-left - halfWidth
+	
+	&_ball
+		position absolute
+		width ballSize
+		height ballSize
+		background ballColor
+		transition left, top, speed
+
+	&_pad-1, &_pad-2
+		position absolute
+		width padWidth
+		height padHeight
+		background padColor
+		transition left speed
+
+	&_pad-1 
+		bottom 0px
+
+	&_pad-2
+		top 0px
