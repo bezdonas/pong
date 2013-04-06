@@ -137,11 +137,6 @@ audio:not([controls]),
   width: 10px;
   height: 10px;
   background: #000;
-  -webkit-transition: left, top, 0.2s;
-  -moz-transition: left, top, 0.2s;
-  -o-transition: left, top, 0.2s;
-  -ms-transition: left, top, 0.2s;
-  transition: left, top, 0.2s;
 }
 .pong-game_pad-1,
 .pong-game_pad-2 {
@@ -149,15 +144,20 @@ audio:not([controls]),
   width: 100px;
   height: 10px;
   background: #000;
-  -webkit-transition: left 0.2s;
-  -moz-transition: left 0.2s;
-  -o-transition: left 0.2s;
-  -ms-transition: left 0.2s;
-  transition: left 0.2s;
 }
 .pong-game_pad-1 {
   bottom: 0px;
 }
 .pong-game_pad-2 {
   top: 0px;
+}
+.log {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -250px;
+  border: 2px solid #ccc;
+  overflow-y: scroll;
 }

@@ -1,0 +1,2 @@
+- test pair searching, look for solution in situation where player leaves browser while in play
+- do smth with arrangeMatch function, or it will become a mess soon
